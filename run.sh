@@ -3,10 +3,8 @@ OUTPUT_DIR=
 MAX_EPSILON=16
 GPU=0
 USE_EXISTING=0
-
-python tar_attack.py\
-	--input_dir = $1 \
-	--output_dir = $2 \
+i
+python tar_attack.py --input_dir=$1 --output_dir=$2
 #	--checkpoint_path = ./checkpoints/ \
 #	--max_epsilon = "${MAX_EPSILON}" \
 #	--num_iter=10 \
