@@ -3,6 +3,7 @@ MAINTAINER cutrain <duanyuge@qq.com>
 RUN apt-get update
 RUN apt-get install -y python3-dev python3-pip
 ADD . /competition
+COPY ./pip.conf /root/.pip/pip.conf
 WORKDIR /competition
 RUN pip3 install -r requirements.txt
 #Dockerfile of Example
